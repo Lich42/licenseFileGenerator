@@ -12,7 +12,7 @@ while True:
 
 		continue
 
-	elif liceName == 'gpl' or liceName == 'al' or liceName == 'bsd2' or liceName == 'bsd3' or liceName == 'ul' or liceName == 'mpl': 
+	elif liceName == 'gpl' or liceName == 'al' or liceName == 'bsd2' or liceName == 'bsd3' or liceName == 'ul' or liceName == 'mit' or liceName == 'mpl': 
 		repoPath = input('Please type the path to the repository: ') 
 		liceFile = 'licenses/' + liceName + '.txt' #Gets the file path of the users desired license
 
