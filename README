@@ -1,4 +1,4 @@
-licenseFileGenerator (or LFG) is a python script which generates a LIcNSE file in a user-specified local repository so the user doesn't have to do so on Github's website.  The user uses the terminal to enter which open source license they would like to use and a path in which to create the file.  It then creates the file and names it "LICENSE" so Github automatically recognizes it as such.
+licenseFileGenerator (or LFG) is a python script which generates a LICENSE file in a user-specified local repository so the user doesn't have to do so on Github's website.  The user uses the terminal to enter which open source license they would like to use and a path in which to create the file.  It then creates the file and names it "LICENSE" so Github automatically recognizes it as such.
 
 This program uses the LFG_Licenses repo (found here: https://github.com/Lich42/LFG_Licenses) also hosted on this account to copy the text for each license.  Because of this, you must be connected to the internet for this program to work properly.
 
