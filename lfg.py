@@ -19,7 +19,7 @@ while True:
 		f = open(liceFile, 'r') #Opens the license file
 		os.chdir(repoPath) #Changes the directory to the user's specified one
 
-		with open("LICENSE.md", "w+") as text_file: 
+		with open("LICENSE", "w+") as text_file: 
 			text_file.write(f.read()) 
 	
 		print("Success!") 
