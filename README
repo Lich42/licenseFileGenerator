@@ -8,8 +8,6 @@ Note: This program basically voids the need for gplFileCreator to exist, but I w
 HOW TO USE
 -----------
 
-Important: the "licenses" folder must be inside the folder "lfg.py" is stored in!
-
 1. Navigate to the folder you saved the script to and type "python3 lfg.py" into the terminal.
 2. Type the command for the license you wish to use (a list of commands can be found by typing "LIST")
 3. Type the path to the desired local repository when prompted.  This must be the full path, e.g. /home/YOUR_USERNAME/Desktop/Test_Repo
