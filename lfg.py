@@ -1,5 +1,6 @@
 import os
 import sys
+import requests
 
 while True:
 	liceName = input('Which license would you like to use? (Type "LIST" for a list of the available commands): ')
@@ -14,13 +15,13 @@ while True:
 
 	elif liceName == 'gpl' or liceName == 'al' or liceName == 'bsd2' or liceName == 'bsd3' or liceName == 'ul' or liceName == 'mit' or liceName == 'mpl': 
 		repoPath = input('Please type the path to the repository: ') 
-		liceFile = 'licenses/' + liceName + '.txt' #Gets the file path of the users desired license
+		liceFile = 'https://raw.githubusercontent.com/Lich42/LFG_Licenses/master/' + liceName + '.txt' #Gets the file path of the users desired license
+		data = requests.get(liceFile)
 
-		f = open(liceFile, 'r') #Opens the license file
 		os.chdir(repoPath) #Changes the directory to the user's specified one
 
 		with open("LICENSE", "w+") as text_file: 
-			text_file.write(f.read()) 
+			text_file.write(data.text) 
 	
 		print("Success!") 
 		sys.exit() 

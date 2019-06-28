@@ -19,5 +19,5 @@ TO-DO
 This is a list of things that need working on.
 
 1. Add more licenses.  The more the better.
-2. Possibly find a way to pull the licenses' text off the internet rather than from text files on the user's machine (unlikely).
+~~2. Possibly find a way to pull the licenses' text off the internet rather than from text files on the user's machine (unlikely).~~ Done!
 3. Improve efficiency in any way possible.
