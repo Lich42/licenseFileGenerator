@@ -1,4 +1,5 @@
 licenseFileGenerator (or LFG) is a python script built upon one of my previous scripts (the gplFileCreator) which generates a LICENSE.md file in a user-specified local repository so the user doesn't have to do so on Github's website.  The difference between this script and my previous one is that this one has multiple choices of licenses to generate.
+This program uses the LFG_Licenses repo also hosted on this account to copy the text for each license.  Because of this, you must be connected to the internet for this program to work properly.
 
 Note: This program basically voids the need for gplFileCreator to exist, but I will keep it up for preservation's sake.
 
@@ -19,5 +20,4 @@ TO-DO
 This is a list of things that need working on.
 
 1. Add more licenses.  The more the better.
-~~2. Possibly find a way to pull the licenses' text off the internet rather than from text files on the user's machine (unlikely).~~ Done!
-3. Improve efficiency in any way possible.
+2. Improve efficiency in any way possible.
