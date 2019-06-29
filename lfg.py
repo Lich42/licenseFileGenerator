@@ -3,7 +3,7 @@ import sys
 import requests
 
 while True:
-	liceName = input('Which license would you like to use? (Type "LIST" for a list of the available commands): ')
+	liceName = input('(You can type "LIST" for a list of the available commands or "EXIT" to exit)\n===============\nWhich license would you like to use?: ')
 
 	if liceName == "LIST": 
 		#Lists all the licenses and available and their commands
@@ -15,7 +15,7 @@ while True:
 
 	elif liceName == 'gpl' or liceName == 'al' or liceName == 'bsd2' or liceName == 'bsd3' or liceName == 'ul' or liceName == 'mit' or liceName == 'mpl': 
 		repoPath = input('Please type the path to the repository: ') 
-		liceFile = 'https://raw.githubusercontent.com/Lich42/LFG_Licenses/master/' + liceName + '.txt' #Gets the url of the users desired license
+		liceFile = 'https://raw.githubusercontent.com/Lich42/LFG_Licenses/master/' + liceName + '.txt' #Gets the url of the user's desired license
 		data = requests.get(liceFile)
 
 		os.chdir(repoPath) #Changes the directory to the user's specified one
@@ -25,6 +25,9 @@ while True:
 	
 		print("Success!") 
 		sys.exit() 
+
+	elif liceName == "EXIT":
+		sys.exit()
 
 	else:
 		print("\nTHAT IS NOT A VALID COMMAND, PLEASE TRY AGAIN\n")
