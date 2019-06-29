@@ -15,7 +15,7 @@ while True:
 
 	elif liceName == 'gpl' or liceName == 'al' or liceName == 'bsd2' or liceName == 'bsd3' or liceName == 'ul' or liceName == 'mit' or liceName == 'mpl': 
 		repoPath = input('Please type the path to the repository: ') 
-		liceFile = 'https://raw.githubusercontent.com/Lich42/LFG_Licenses/master/' + liceName + '.txt' #Gets the file path of the users desired license
+		liceFile = 'https://raw.githubusercontent.com/Lich42/LFG_Licenses/master/' + liceName + '.txt' #Gets the url of the users desired license
 		data = requests.get(liceFile)
 
 		os.chdir(repoPath) #Changes the directory to the user's specified one
