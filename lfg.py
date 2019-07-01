@@ -7,7 +7,7 @@ while True:
 
 	if liceName == "LIST": 
 		#Lists all the licenses and available and their commands
-		#NOTE: The only reason I've used multiple "prints" is to keep the source good looking neat
+		#NOTE: The only reason I've used multiple "prints" is to keep the source code looking neat
 		print("\n-------------\n  LICENSES\n-------------\n")
 		print("LICENSE                    COMMAND\n")
 		print("General Public License v3 = 'gpl'\nApache License = 'al'\nBSD 2 = 'bsd2'\nBSD 3 = 'bsd3'\nMIT = 'mit'\nUnlicense = 'ul'\nMozilla Public License v2 = 'mpl'")
