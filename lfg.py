@@ -15,7 +15,9 @@ while True:
 
 		continue
 
-	elif liceName == 'gpl' or liceName == 'al' or liceName == 'bsd2' or liceName == 'bsd3' or liceName == 'ul' or liceName == 'mit' or liceName == 'mpl' or liceName == 'agpl' or liceName == 'lgpl' or liceName == 'epl':
+	#This elif statement is split into 2 different lines to keep it from being one super long line of code
+	elif liceName == 'gpl' or liceName == 'al' or liceName == 'bsd2' or liceName == 'bsd3' or liceName == 'ul' or liceName == 'mit' \
+	or liceName == 'mpl' or liceName == 'agpl' or liceName == 'lgpl' or liceName == 'epl':
 		repoPath = input('Please type the path to the repository: ') 
 		liceFile = 'https://raw.githubusercontent.com/Lich42/LFG_Licenses/master/' + liceName + '.txt' #Gets the url of the user's desired license
 		data = requests.get(liceFile)
