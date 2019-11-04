@@ -18,8 +18,10 @@ while True:
 	#This elif statement is split into 2 different lines to keep it from being one super long line of code
 	elif liceName == 'gpl' or liceName == 'al' or liceName == 'bsd2' or liceName == 'bsd3' or liceName == 'ul' or liceName == 'mit' \
 	or liceName == 'mpl' or liceName == 'agpl' or liceName == 'lgpl' or liceName == 'epl':
-		repoPath = input('Please type the path to the repository: ') 
-		liceFile = 'https://raw.githubusercontent.com/Lich42/LFG_Licenses/master/' + liceName + '.txt' #Gets the url of the user's desired license
+		repoPath = input('Please type the path to the repository: ')
+
+                #Gets the user's desired license 
+		liceFile = 'https://raw.githubusercontent.com/Lich42/LFG_Licenses/master/' + liceName + '.txt'
 		data = requests.get(liceFile)
 
 		os.chdir(repoPath) #Changes the directory to the user's specified one
