@@ -1,11 +1,11 @@
 import os
-import sys
 import requests
 
 while True:
-	liceName = input('(You can type "LIST" for a list of the available commands or "EXIT" to exit)\n===============\nWhich license would you like to use?: ')
+	liceName = input('(You can type "list" for a list of the available commands or "exit" to exit)\n===============\nWhich license would you like to use?: ')
+	liceName = liceName.lower() #Makes the input lowercase
 
-	if liceName == "LIST": 
+	if liceName == "list": 
 		#Lists all the licenses and available and their commands
 		#NOTE: The only reason I've used multiple "prints" is to keep the source code looking neat
 		print("\n-------------\n  LICENSES\n-------------\n")
@@ -20,8 +20,7 @@ while True:
 	or liceName == 'mpl' or liceName == 'agpl' or liceName == 'lgpl' or liceName == 'epl':
 		repoPath = input('Please type the path to the repository: ')
 
-                #Gets the user's desired license 
-		liceFile = 'https://raw.githubusercontent.com/Lich42/LFG_Licenses/master/' + liceName + '.txt'
+		liceFile = 'https://raw.githubusercontent.com/Lich42/LFG_Licenses/master/' + liceName + '.txt' #Gets the user's desired license
 		data = requests.get(liceFile)
 
 		os.chdir(repoPath) #Changes the directory to the user's specified one
@@ -30,10 +29,10 @@ while True:
 			text_file.write(data.text) 
 	
 		print("Success!") 
-		sys.exit() 
+		break
 
-	elif liceName == "EXIT":
-		sys.exit()
+	elif liceName == "exit":
+		break
 
 	else:
 		print("\nTHAT IS NOT A VALID COMMAND, PLEASE TRY AGAIN\n")
